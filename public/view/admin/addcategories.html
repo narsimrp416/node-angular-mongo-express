@@ -1,0 +1,51 @@
+ <div id="contact-page" class="container" >
+    	<div class="bg">
+	    	    	
+    		<div class="row">  	
+	    		<div class="col-sm-12">
+	    			<div class="contact-form">
+	    				<h2 class="title text-center">Get In Touch</h2>
+	    				<div class="status alert alert-success" style="display: none"></div>
+				    	<form id="main-contact-form" class="contact-form row" name="contact-form" method="post" ng-controller="config">
+				            <div class="form-group col-md-6">
+				                <input type="text" ng-model="Caterogy" name="name" class="form-control" required="required" placeholder="Caterogy">
+				            </div>
+				            <div class="form-group col-md-6">
+				                <input type="text" ng-model="SubCaterogy" name="name" class="form-control" required="required" placeholder="SubCaterogy">
+				            </div>                      
+				            <div class="form-group col-md-12">
+				                <input type="submit" ng-click="myFunc1()" name="submit" class="btn btn-primary pull-right" value="Submit">
+				            </div>
+				        </form>
+
+
+
+	    			</div>
+	    		</div>
+	    		    			
+	    	</div>  
+    	</div>	
+    </div><!--/#contact-page-->
+	<section id="cart_items">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Shopping Cart</li>
+				</ol>
+			</div>
+			<div class="table-responsive cart_info" ng-controller="ShowCategory">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image">Category</td>
+							<td class="image">SubCategory</td>
+						</tr>
+					</thead>
+					<tbody>						
+						<tr ng-repeat="Cat in Category"> <td> {{Cat.category}} </td> <td> {{Cat.subcategory}} </td> </tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section> <!--/#cart_items-->
