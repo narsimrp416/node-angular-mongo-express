@@ -1,6 +1,7 @@
 ## MEAN DEMO
 
 Its a Simple and effective online shopping store where you can customize products as per your requirements.
+Its a Simple and effective online shopping store where you can customize products as per your requirements.
 
 ## TECHNOLOGIES
 
